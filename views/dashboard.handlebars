@@ -1,0 +1,31 @@
+<section>
+    <h2>Create New Blog Post</h2>
+
+    <form class="new-post-form">
+        <div>
+            <label for="post-title">Title</label>
+            <textarea rows="4" id="post-title" name="post-title" ></textarea>
+        </div>
+        <div>
+            <label for="post-content">Content</label>
+            <textarea rows="4" id="post-content" name="post-content" ></textarea>
+        </div>
+        <button type="submit" class="btn">Create</button>
+    </form>
+</section>
+
+{{#if posts.length}}
+<section>
+    <h2>Your Blog Posts</h2>
+    <ul>
+        {{#each posts as |post|}}
+        <li>
+        {{> post-info post}}
+        <br>
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit blog post</a>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+{{/if}}
+<script src="/javascript/add-post.js"></script>
