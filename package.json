@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nmemarcoding/Tech-Blog-1400.git"
+        "url": "git+https://github.com/jbiske/Tech-Blog.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/nmemarcoding/Tech-Blog-1400/issues"
+        "url": "https://github.com/jbiske/Tech-Blog/issues"
     },
-    "homepage": "https://github.com/nmemarcoding/Tech-Blog-1400#readme",
+    "homepage": "https://github.com/jbiske/Tech-Blog#readme",
     "dependencies": {
         "bcrypt": "^5.0.1",
         "connect-session-sequelize": "^7.1.2",
@@ -26,6 +26,8 @@
         "express-handlebars": "^6.0.3",
         "express-session": "^1.17.2",
         "mysql2": "^2.3.3",
-        "nodemon": "^2.0.15"
+        "nodemon": "^2.0.15",
+        "sequelize": "^6.19.0",
+        "xpress": "^2.4.6"
     }
 }
